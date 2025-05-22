@@ -1,0 +1,214 @@
+/* Reset e estrutura geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.body-bg {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f2f3f5;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.page-container {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #0a2e1a;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #0a2e1a;
+  font-weight: 500;
+}
+
+/* Página inicial */
+.image-background {
+  background: url("imagem1.1.png") no-repeat center center/cover;
+  padding: 4rem 2rem;
+}
+
+.hero {
+  color:#0a2e1a;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.cta-button {
+  background-color: #0a2e1a;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Textos e seções */
+.basic-section, .text-section {
+  padding: 2rem;
+  color: #0a2e1a;
+  max-width: 800px;
+  margin: auto;
+}
+
+.text-section ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.text-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #0a2e1a;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover, .cta-button:hover {
+  background-color: #14532d;
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-size: 0.9rem;
+  border-top: 1px solid #eee;
+  color: #666;
+}
+
+/* Imagens */
+.section-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
+
+  .hero-content, .text-section {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+}
+
+/* Animações */
+.hero-content, .text-section {
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Centralizar títulos */
+h1, h2 {
+  text-align: center;
+}
+
+
+body.body-bg {
+  font-family: "Segoe UI", sans-serif;
+  background-image: url("imagem1.1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+
+.content-container {
+  background-color: rgba(255, 255, 255, 0.85); /* Fundo branco semi-transparente */
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
